@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>LaBanMall</title>
 </head>
 
-<body class="mx-auto">
+<body class="mx">
     <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50 flex items-center justify-between px-8 py-3">
         <!--LABANMALL-->
         <div class="flex items-center space-x-2">
@@ -69,6 +68,7 @@
         </div>
 
     </header>
+
     <div class="border-t border-gray-300 w-screen"></div>
     <div class="bg-[#FEEADD] grid grid-cols-2 gap-10 px-10 py-20 items-center">
         <div class="space-y-4">
@@ -436,45 +436,50 @@
                 Khám phá danh mục sản phẩm</h2>
             <p class="flex justify-center items-center text-[#62748E] text-xl">Hàng triệu sản phẩm đa dạng từ các nhà
                 cung cấp uy tín trên toàn thế giới</p>
-            <div class="rounded-full bg-[#FEF5EE] flex justify-center justify-between space-x-2">
-                <button
-                    class="flex space-x-1 bg-gradient-to-r from-[#FF8A28] to-[#FF3125] text-white rounded-full p-1 px-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                        fill="white">
-                        <path
-                            d="M240-400q0 52 21 98.5t60 81.5q-1-5-1-9v-9q0-32 12-60t35-51l113-111 113 111q23 23 35 51t12 60v9q0 4-1 9 39-35 60-81.5t21-98.5q0-50-18.5-94.5T648-574q-20 13-42 19.5t-45 6.5q-62 0-107.5-41T401-690q-39 33-69 68.5t-50.5 72Q261-513 250.5-475T240-400Zm240 52-57 56q-11 11-17 25t-6 29q0 32 23.5 55t56.5 23q33 0 56.5-23t23.5-55q0-16-6-29.5T537-292l-57-56Zm0-492v132q0 34 23.5 57t57.5 23q18
+            <div class="flex justify-center">
+                <div class="inline-flex bg-[#FEF5EE] justify-center space-x-2 p-2 rounded-full mx-auto">
+                    <button
+                        class="flex space-x-1 bg-gradient-to-r from-[#FF8A28] to-[#FF3125] text-white rounded-full p-1 px-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="white">
+                            <path
+                                d="M240-400q0 52 21 98.5t60 81.5q-1-5-1-9v-9q0-32 12-60t35-51l113-111 113 111q23 23 35 51t12 60v9q0 4-1 9 39-35 60-81.5t21-98.5q0-50-18.5-94.5T648-574q-20 13-42 19.5t-45 6.5q-62 0-107.5-41T401-690q-39 33-69 68.5t-50.5 72Q261-513 250.5-475T240-400Zm240 52-57 56q-11 11-17 25t-6 29q0 32 23.5 55t56.5 23q33 0 56.5-23t23.5-55q0-16-6-29.5T537-292l-57-56Zm0-492v132q0 34 23.5 57t57.5 23q18
                          0 33.5-7.5T622-658l18-22q74 42 117 117t43 163q0 134-93 227T480-80q-134 0-227-93t-93-227q0-129 86.5-245T480-840Z" />
-                    </svg>
-                    <p>Xu hướng</p>
-                </button>
-                <button class="flex space-x-1 bg-[#FEF5EE] rounded-full p-1 px-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                        fill="#FF3125">
-                        <path
-                            d="m136-240-56-56 296-298 160 160 208-206H640v-80h240v240h-80v-104L536-320 376-480 136-240Z" />
-                    </svg>
-                    <p class="bg-gradient-to-t from-[#FE6825] to-[#FF3125] bg-clip-text text-transparent">Theo mùa</p>
-                </button>
-                <button class="flex space-x-1 bg-[#FEF5EE] rounded-full p-1 px-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                        fill="#FF3125">
-                        <path
-                            d="M240-400q0 52 21 98.5t60 81.5q-1-5-1-9v-9q0-32 12-60t35-51l113-111 113 111q23 23 35 51t12 60v9q0 4-1 9 39-35 60-81.5t21-98.5q0-50-18.5-94.5T648-574q-20 13-42 19.5t-45 6.5q-62 0-107.5-41T401-690q-39 33-69 68.5t-50.5 72Q261-513 250.5-475T240-400Zm240 52-57 56q-11 11-17 25t-6 29q0 32 23.5 55t56.5 23q33 0 56.5-23t23.5-55q0-16-6-29.5T537-292l-57-56Zm0-492v132q0 34 23.5 57t57.5 23q18
+                        </svg>
+                        <p>Xu hướng</p>
+                    </button>
+                    <button class="flex space-x-1 bg-[#FEF5EE] rounded-full p-1 px-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FF3125">
+                            <path
+                                d="m136-240-56-56 296-298 160 160 208-206H640v-80h240v240h-80v-104L536-320 376-480 136-240Z" />
+                        </svg>
+                        <p class="bg-gradient-to-t from-[#FE6825] to-[#FF3125] bg-clip-text text-transparent">Theo mùa
+                        </p>
+                    </button>
+                    <button class="flex space-x-1 bg-[#FEF5EE] rounded-full p-1 px-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FF3125">
+                            <path
+                                d="M240-400q0 52 21 98.5t60 81.5q-1-5-1-9v-9q0-32 12-60t35-51l113-111 113 111q23 23 35 51t12 60v9q0 4-1 9 39-35 60-81.5t21-98.5q0-50-18.5-94.5T648-574q-20 13-42 19.5t-45 6.5q-62 0-107.5-41T401-690q-39 33-69 68.5t-50.5 72Q261-513 250.5-475T240-400Zm240 52-57 56q-11 11-17 25t-6 29q0 32 23.5 55t56.5 23q33 0 56.5-23t23.5-55q0-16-6-29.5T537-292l-57-56Zm0-492v132q0 34 23.5 57t57.5 23q18
                          0 33.5-7.5T622-658l18-22q74 42 117 117t43 163q0 134-93 227T480-80q-134 0-227-93t-93-227q0-129 86.5-245T480-840Z" />
-                    </svg>
-                    <p class="bg-gradient-to-t from-[#FE6825] to-[#FF3125] bg-clip-text text-transparent">Phổ biến</p>
-                </button>
-                <button class="flex space-x-1 bg-[#FEF5EE] rounded-full p-1 px-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                        fill="#FF3125">
-                        <path
-                            d="M240-400q0 52 21 98.5t60 81.5q-1-5-1-9v-9q0-32 12-60t35-51l113-111 113 111q23 23 35 51t12 60v9q0 4-1 9 39-35 60-81.5t21-98.5q0-50-18.5-94.5T648-574q-20 13-42 19.5t-45 6.5q-62 0-107.5-41T401-690q-39 33-69 68.5t-50.5 72Q261-513 250.5-475T240-400Zm240 52-57 56q-11 11-17 25t-6 29q0 32 23.5 55t56.5 23q33 0 56.5-23t23.5-55q0-16-6-29.5T537-292l-57-56Zm0-492v132q0 34 23.5 57t57.5 23q18
+                        </svg>
+                        <p class="bg-gradient-to-t from-[#FE6825] to-[#FF3125] bg-clip-text text-transparent">Phổ biến
+                        </p>
+                    </button>
+                    <button class="flex space-x-1 bg-[#FEF5EE] rounded-full p-1 px-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FF3125">
+                            <path
+                                d="M240-400q0 52 21 98.5t60 81.5q-1-5-1-9v-9q0-32 12-60t35-51l113-111 113 111q23 23 35 51t12 60v9q0 4-1 9 39-35 60-81.5t21-98.5q0-50-18.5-94.5T648-574q-20 13-42 19.5t-45 6.5q-62 0-107.5-41T401-690q-39 33-69 68.5t-50.5 72Q261-513 250.5-475T240-400Zm240 52-57 56q-11 11-17 25t-6 29q0 32 23.5 55t56.5 23q33 0 56.5-23t23.5-55q0-16-6-29.5T537-292l-57-56Zm0-492v132q0 34 23.5 57t57.5 23q18
                          0 33.5-7.5T622-658l18-22q74 42 117 117t43 163q0 134-93 227T480-80q-134 0-227-93t-93-227q0-129 86.5-245T480-840Z" />
-                    </svg>
-                    <p class="bg-gradient-to-t from-[#FE6825] to-[#FF3125] bg-clip-text text-transparent">Mới nhất</p>
-                </button>
+                        </svg>
+                        <p class="bg-gradient-to-t from-[#FE6825] to-[#FF3125] bg-clip-text text-transparent">Mới nhất
+                        </p>
+                    </button>
+                </div>
             </div>
-            <div class="grid grid-cols-4 flex items-center justify-center gap-10 text-white">
+            <div class="grid grid-cols-4 items-center justify-center gap-10 text-white">
                 <div class="p-2 bg-gradient-to-t from-[#1447E6] to-[#2B7FFF] rounded-xl space-y-4">
 
                     <button class="text-white rounded-full px-4 flex justify-center"
@@ -484,8 +489,9 @@
                     <div>
                         <p class="text-lg font-medium">Thời trang nam</p>
                         <p>8,5k sản phẩm</p>
+                        <a href="#" class="font-medium">Xem tất cả danh mục ></a>
                     </div>
-                    <a href="#" class="font-medium">Xem tất cả danh mục ></a>
+
                 </div>
                 <div class="p-2 bg-gradient-to-t from-[#1447E6] to-[#2B7FFF] rounded-xl space-y-4">
 
@@ -497,6 +503,7 @@
                         <p class="text-lg font-medium">Thời trang nam</p>
                         <p>8,5k sản phẩm</p>
                     </div>
+                    <a href="#" class="font-medium hidden">Xem tất cả danh mục ></a>
                 </div>
                 <div class="p-2 bg-gradient-to-t from-[#EC003F] to-[#F6339A] rounded-xl space-y-4">
 
@@ -507,7 +514,9 @@
                     <div class="p-1">
                         <p class="text-lg font-medium">Thời trang nam</p>
                         <p>8,5k sản phẩm</p>
+
                     </div>
+                    <a href="#" class="font-medium hidden">Xem tất cả danh mục ></a>
                 </div>
                 <div class="p-2 bg-gradient-to-t from-[#EC003F] to-[#F6339A] rounded-xl space-y-4">
 
@@ -518,7 +527,8 @@
                     <div class="p-1">
                         <p class="text-lg font-medium">Thời trang nam</p>
                         <p>8,5k sản phẩm</p>
-                    </div>
+
+                    </div><a href="#" class="font-medium hidden">Xem tất cả danh mục ></a>
                 </div>
 
             </div>
@@ -546,10 +556,10 @@
         </div>
 
         <div class="flex space-x-5 items-center rounded-lg">
-            <button class="w-30 py-2 bg-[#F76E11] text-white px-4 py-2 rounded-full">Xu hướng</button>
-            <button class="w-30 py-2 bg-gray-200 text-gray-700 px-4 py-2 rounded-full">Bán chạy</button>
-            <button class="w-30 py-2 bg-gray-200 text-gray-700 px-4 py-2 rounded-full">Mới nhất</button>
-            <button class="w-30 py-2 bg-gray-200 text-gray-700 px-4 py-2 rounded-full">Giảm giá</button>
+            <button class="w-30 py-2 bg-[#F76E11] text-white px-4 rounded-full">Xu hướng</button>
+            <button class="w-30 py-2 bg-gray-200 text-gray-700 px-4  rounded-full">Bán chạy</button>
+            <button class="w-30 py-2 bg-gray-200 text-gray-700 px-4  rounded-full">Mới nhất</button>
+            <button class="w-30 py-2 bg-gray-200 text-gray-700 px-4 rounded-full">Giảm giá</button>
         </div>
 
         <div class="grid grid-cols-5 gap-1 py-5">
@@ -997,7 +1007,7 @@
         </div>
         <div class="w-full h-[1px] bg-gradient-to-r from-transparent via-white to-transparent"></div>
 
-        <div class="flex bg-[#1B2530] flex justify-between items-center w-full text-white p-10 ">
+        <div class="flex bg-[#1B2530] justify-between items-center w-full text-white p-10 ">
             <p>© 2025 LabanMall. Tất cả các quyền được bảo lưu.</p>
             <div class="flex space-x-4">
                 <a href="#" class="hover:underline">Chính sách bảo mật</a>

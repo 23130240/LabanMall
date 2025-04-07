@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Trung tâm trợ giúp</title>
+</head>
+
+<body class="text-[#1D293D] bg-[#F8F9FA]">
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50 flex items-center justify-between px-8 py-3">
+        <!--LABANMALL-->
+        <div class="flex items-center space-x-2">
+            <h1 class="text-4xl font-bold text-[#0085DB]">LABAN</h1>
+            <h1 class="text-4xl font-bold bg-gradient-to-r from-[#FF8A28] to-[#E63E30] bg-clip-text text-transparent">
+                MALL
+            </h1>
+        </div>
+        <!--Tim kiem-->
+        <div class="flex items-center gap-2">
+            <!-- Nút tìm kiếm -->
+            <div class="flex items-center border border-gray-300 rounded-full overflow-hidden w-80 px-4 py-2">
+                <input type="text" placeholder="Tìm kiếm sản phẩm....."
+                    class="flex-1 min-w-0 text-gray-700 outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#1f1f1f">
+                    <path
+                        d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                </svg>
+            </div>
+
+            <!-- Nút tải ảnh -->
+            <label for="file-upload"
+                class="border border-gray-300 rounded-full w-15 h-10 flex items-center justify-center cursor-pointer">
+                <img src="picture/image.png" alt="Upload" class="w-6 h-6">
+            </label>
+        </div>
+
+
+        <!--San pham, danh muc, dich vu-->
+        <div class="flex items-center gap-10 whitespace-nowrapwhitespace-nowrap">
+            <a href="#" class="hover:text-orange-500">Sản phẩm</a>
+            <a href="#" class="hover:text-orange-500">Danh mục</a>
+            <a href="#" class="hover:text-orange-500">Dịch vụ</a>
+        </div>
+        <!--Cac icon-->
+        <div class="flex items-center gap-10 ml-7">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                <path
+                    d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                <path
+                    d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                <path
+                    d="m480-560-56-56 63-64H320v-80h167l-64-64 57-56 160 160-160 160ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+            </svg>
+        </div>
+        <!--Dang nhap-->
+        <div>
+            <a href="#" class=" flex items-center justify-center space-x-2">
+                <div class="w-10 h-10 bg-orange-500 rounded-full border border-white">
+                </div>
+                <p>Nguyễn Hưng</p>
+            </a>
+        </div>
+
+    </header>
+
+    <div class="mx-10 space-y-5">
+        <div class="text-[#364153] space-x-4 pt-20 flex items-center ">
+            <a href="#" class="hover:underline">Trang chủ</a>
+            <p>></p>
+            <a href="#" class="hover:underline font-medium">Trung tâm trợ giúp</a>
+        </div>
+        <div class="text-2xl font-bold  ">
+            <h1>Chào Hưng! Chúng tôi có thể giúp gì cho bạn?</h1>
+        </div>
+        <div class="bg-white shadow-lg rounded-full flex items-center px-4 py-3 space-x-4">
+            <!-- Ô tìm kiếm -->
+            <div class="flex items-center border border-gray-300 rounded-full px-4 py-2 w-full">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#1f1f1f" class="flex-shrink-0">
+                    <path
+                        d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                </svg>
+                <input type="text" placeholder="Tìm kiếm thông tin hướng dẫn sử dụng những thông tin khác"
+                    class="flex-1 min-w-0 text-gray-700 px-2 outline-none bg-transparent">
+            </div>
+
+            <!-- Nút tìm kiếm -->
+            <button
+                class="px-4 py-2 rounded-full bg-gradient-to-r from-[#FF8A28] to-[#E63E30] text-white whitespace-nowrap">
+                Tìm kiếm
+            </button>
+
+            <!-- Dấu phân cách -->
+            <div class="w-px h-6 bg-gray-300"></div>
+
+            <div class="flex items-center border border-gray-300 rounded-full px-4 py-2">
+                <input type="text" placeholder="Đối tượng bài viết"
+                    class="flex-1 min-w-0 text-gray-700 px-2 outline-none bg-transparent">
+                <p class="text-right"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                        width="12px" fill="#F76E11">
+                        <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                    </svg></p>
+            </div>
+        </div>
+
+        <div class="border-b border-gray-300 pt-2">
+            <ul class="flex space-x-6">
+                <li
+                    class="relative pb-2 font-semibold text-[#1D293D] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-black">
+                    Khách
+                </li>
+                <li class="text-gray-500 cursor-pointer hover:text-[black]">Chủ shop & Kinh doanh online</li>
+                <li class="text-gray-500 cursor-pointer hover:text-black">Doanh nghiệp & Bán buôn lớn</li>
+                <li class="text-gray-500 cursor-pointer hover:text-black">Bán hàng không cần nhập kho</li>
+                <li class="text-gray-500 cursor-pointer hover:text-black">Người mua theo trend & order hộ</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2 class="text-[#1D293D] font-bold text-2xl py-4">Đề xuất cho bạn</h2>
+            <div class="grid grid-cols-3">
+                <div class="border-2 border-gray-300 rounded-2xl space-y-2 overflow-hidden w-full bg-white">
+                    <div class="space-y-2 p-4">
+                        <div class="flex items-center space-x-1 text-[#FF3125] font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#FF3125">
+                                <path
+                                    d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 
+                            69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                            </svg>
+                            <p>Bảo mật</p>
+                        </div>
+                        <p class="font-bold">
+                            Danh tính của bạn chưa được xác minh đầy đủ
+                        </p>
+                        <p class="font-normal">
+                            Quy trình xác minh danh tính giúp chúng tôi xác nhận rằng đó đúng là bạn.
+                            Đây là một trong những cách giúp chúng tôi đảm bảo an toàn trên LabanMall.
+                        </p>
+                    </div>
+                    <hr class="border-gray-300">
+                    <div class="space-x-2 text-[#FF3125] font-bold flex items-center py-1 px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#314158">
+                            <path
+                                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 
+                            69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                        </svg>
+                        <p class="font-medium text-[#314158]">Kiểm tra tài khoản</p>
+                    </div>
+                    <hr class="border-gray-300">
+                    <div class="flex items-center space-x-1 text-[#FF3125] font-bold py-1 px-4 pb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#314158">
+                            <path
+                                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 
+                            69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                        </svg>
+                        <p class="font-medium text-[#314158]">Tìm hiểu thêm về bảo mật</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-8">
+            <div class="flex items-center justify-between py-4">
+                <h1 class="text-[#1D293D] font-bold text-2xl">Hướng dẫn khi mới bắt đầu</h1>
+                <a href="#"
+                    class="bg-gradient-to-r from-[#F76E11] to-[#FF3125] bg-clip-text text-transparent flex items-center justify-center space-x-4">
+                    <p>Xem tất cả chủ đề</p> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="12px" fill="#F76E11">
+                        <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                    </svg></p>
+                </a>
+            </div>
+            <div class="grid grid-cols-4 grid-rows-2 space-y-10 space-x-5 py-10">
+                <div class="flex-col space-y-3">
+                    <p class="font-bold">
+                        Tìm kiếm sản phẩm
+                    </p>
+                    <p class="underline">
+                        Mẹo tìm kiếm
+                    </p>
+                    <p class="underline">
+                        Quy trình đặt hàng
+                    </p>
+                    <p class="underline">
+                        Bảo hiểm sản phẩm
+                    </p>
+                </div>
+                <div class="flex-col space-y-3">
+                    <p class="font-bold">
+                        Tìm kiếm sản phẩm
+                    </p>
+                    <p class="underline">
+                        Mẹo tìm kiếm
+                    </p>
+                    <p class="underline">
+                        Quy trình đặt hàng
+                    </p>
+                    <p class="underline">
+                        Bảo hiểm sản phẩm
+                    </p>
+                </div>
+                <div class="flex-col space-y-3">
+                    <p class="font-bold">
+                        Tìm kiếm sản phẩm
+                    </p>
+                    <p class="underline">
+                        Mẹo tìm kiếm
+                    </p>
+                    <p class="underline">
+                        Quy trình đặt hàng
+                    </p>
+                    <p class="underline">
+                        Bảo hiểm sản phẩm
+                    </p>
+                </div>
+                <div class="flex-col space-y-3">
+                    <p class="font-bold">
+                        Tìm kiếm sản phẩm
+                    </p>
+                    <p class="underline">
+                        Mẹo tìm kiếm
+                    </p>
+                    <p class="underline">
+                        Quy trình đặt hàng
+                    </p>
+                    <p class="underline">
+                        Bảo hiểm sản phẩm
+                    </p>
+                </div>
+                <div class="flex-col space-y-3">
+                    <p class="font-bold">
+                        Tìm kiếm sản phẩm
+                    </p>
+                    <p class="underline">
+                        Mẹo tìm kiếm
+                    </p>
+                    <p class="underline">
+                        Quy trình đặt hàng
+                    </p>
+                    <p class="underline">
+                        Bảo hiểm sản phẩm
+                    </p>
+                </div>
+                <div class="flex-col space-y-3">
+                    <p class="font-bold">
+                        Tìm kiếm sản phẩm
+                    </p>
+                    <p class="underline">
+                        Mẹo tìm kiếm
+                    </p>
+                    <p class="underline">
+                        Quy trình đặt hàng
+                    </p>
+                    <p class="underline">
+                        Bảo hiểm sản phẩm
+                    </p>
+                </div>
+                <div class="flex-col space-y-3">
+                    <p class="font-bold">
+                        Tìm kiếm sản phẩm
+                    </p>
+                    <p class="underline">
+                        Mẹo tìm kiếm
+                    </p>
+                    <p class="underline">
+                        Quy trình đặt hàng
+                    </p>
+                    <p class="underline">
+                        Bảo hiểm sản phẩm
+                    </p>
+                </div>
+                <div class="flex-col space-y-3">
+                    <p class="font-bold">
+                        Tìm kiếm sản phẩm
+                    </p>
+                    <p class="underline">
+                        Mẹo tìm kiếm
+                    </p>
+                    <p class="underline">
+                        Quy trình đặt hàng
+                    </p>
+                    <p class="underline">
+                        Bảo hiểm sản phẩm
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-4 pb-10">
+            <div class="flex items-center justify-between py-4">
+                <h1 class="text-[#1D293D] font-bold text-2xl">Bài viết đề xuất</h1>
+                <a href="#"
+                    class="bg-gradient-to-r from-[#F76E11] to-[#FF3125] bg-clip-text text-transparent flex items-center justify-center space-x-4">
+                    <p>Xem tất cả bài viết</p> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="12px" fill="#F76E11">
+                        <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                    </svg></p>
+                </a>
+            </div>
+            <div class="grid grid-cols-4 space-x-5 py-2">
+                <div class="space-y-2">
+                    <img src="picture/latop.webp" alt="Tìm kiếm sản phẩm"
+                        class="w-full h-* object-cover rounded-2xl">
+                    <p class="font-bold">Tìm kiếm sản phẩm</p>
+                    <p>If you need to cancel a reservation, update a reservation, or understand how payments</p>
+                </div>
+                <div class="space-y-2">
+                    <img src="picture/latop.webp" alt="Tìm kiếm sản phẩm"
+                        class="w-full h-* object-cover rounded-2xl">
+                    <p class="font-bold">Tìm kiếm sản phẩm</p>
+                    <p>If you need to cancel a reservation, update a reservation, or understand how payments</p>
+                </div>
+                <div class="space-y-2">
+                    <img src="picture/latop.webp" alt="Tìm kiếm sản phẩm"
+                        class="w-full h-* object-cover rounded-2xl">
+                    <p class="font-bold">Tìm kiếm sản phẩm</p>
+                    <p>If you need to cancel a reservation, update a reservation, or understand how payments</p>
+                </div>
+                <div class="space-y-2">
+                    <img src="picture/latop.webp" alt="Tìm kiếm sản phẩm"
+                        class="w-full h-* object-cover rounded-2xl">
+                    <p class="font-bold">Tìm kiếm sản phẩm</p>
+                    <p>If you need to cancel a reservation, update a reservation, or understand how payments</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="relative grid grid-cols-2 p-10 bg-orange-400 overflow-hidden"
+            style="background: linear-gradient(45deg  ,#FF8A28 0%, #FF3125 100%)">
+            <div
+                class="absolute -bottom-15 -right-4 z-[-1] bg-[#F76E11] w-50 h-50 rounded-full flex items-center justify-center shadow-lg">
+            </div>
+            <div
+                class="absolute top-0 left-1/2 z-[-1] transform -translate-x-1/2 -translate-y-1/2 bg-[#F76E11] w-50 h-50 rounded-full flex items-center justify-center">
+            </div>
+            <div class="items-center justify-center">
+                <h2 class="text-3xl text-white font-bold py-5">
+                    Bắt đầu kinh doanh cùng LabanMall<br> ngay hôm nay
+                </h2>
+                <p class="text-xl text-white py-5">
+                    Tiếp cận hàng triệu sản phẩm và nhà cung cấp uy tín từ khắp nơi<br> trên thế giới. Mở rộng kinh
+                    doanh
+                    của bạn với
+                    nền tảng thương mại <br>điện tử xuyên biên giới hàng đầu.
+                </p>
+                <div class="space-x-4 py-6 flex">
+                    <a href="#"
+                        class="border border-white flex items-center rounded-full px-8 py-1 font-medium text-white"
+                        style="background: linear-gradient(45deg  ,#FF8A28 0%, #FF3125 100%)">Đăng ký miễn phí
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path
+                                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+                        </svg>
+
+                    </a>
+                    <a href="#" class="rounded-full px-6 py-1 bg-white text-[#FE6825] font-medium">
+                        <p>Liên hệ tư vấn</p>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 grid-rows-2 gap-2">
+                <div class="rounded-2xl p-4" style="background: rgba(255, 255, 255, 0.1);">
+                    <div class="bg-orange-500 inline-block w-fit h-fit p-4 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px"
+                            fill="white">
+                            <path d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83
+                             0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83
+                              0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50
+                               0-85 35t-35 85ZM200-160v-480 480Z" />
+                        </svg>
+                    </div>
+                    <p class="text-white font-bold">Sản phẩm chất lượng</p>
+                    <p class="text-white">Đảm bảo nguồn gốc và chất lượng</p>
+                </div>
+                <div class="rounded-2xl p-4" style="background: rgba(255, 255, 255, 0.1);">
+                    <div class="bg-orange-500 inline-block w-fit h-fit p-4 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px"
+                            fill="white">
+                            <path d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83
+                             0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83
+                              0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50
+                               0-85 35t-35 85ZM200-160v-480 480Z" />
+                        </svg>
+                    </div>
+                    <p class="text-white font-bold">Sản phẩm chất lượng</p>
+                    <p class="text-white">Đảm bảo nguồn gốc và chất lượng</p>
+                </div>
+                <div class="rounded-2xl p-4 " style="background: rgba(255, 255, 255, 0.1);">
+                    <div class="bg-orange-500 inline-block w-fit h-fit p-4 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px"
+                            fill="white">
+                            <path d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83
+                             0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83
+                              0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50
+                               0-85 35t-35 85ZM200-160v-480 480Z" />
+                        </svg>
+                    </div>
+                    <p class="text-white font-bold">Sản phẩm chất lượng</p>
+                    <p class="text-white">Đảm bảo nguồn gốc và chất lượng</p>
+                </div>
+                <div class="rounded-2xl p-4" style="background: rgba(255, 255, 255, 0.1);"">
+                    <div class=" bg-orange-500 inline-block w-fit h-fit p-4 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px"
+                        fill="white">
+                        <path d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83
+                             0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83
+                              0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50
+                               0-85 35t-35 85ZM200-160v-480 480Z" />
+                    </svg>
+                </div>
+                <p class="text-white font-bold">Sản phẩm chất lượng</p>
+                <p class="text-white">Đảm bảo nguồn gốc và chất lượng</p>
+            </div>
+        </div>
+        </div>
+        <div class="grid grid-cols-6 gap-4 bg-[#1B2530] text-white p-10">
+            <div class="col-span-2">
+                <div class="flex items-center space-x-2">
+                    <h1 class="text-3xl font-bold text-[#0085DB]">LABAN</h1>
+                    <h1
+                        class="text-3xl font-bold bg-gradient-to-r from-[#FF8A28] to-[#E63E30] bg-clip-text text-transparent">
+                        MALL
+                    </h1>
+                </div>
+                LabanMall là nền tảng thương mại điện tử xuyên biên giới hàng đầu, kết nối hàng triệu doanh nghiệp, nhà
+                cung cấp
+                và khách hàng trên toàn cầu.
+            </div>
+            <div class="col-span-1 justify-between">
+                <p class="font-bold text-xl">Liên kết<br></p>
+                Giới thiệu<br>
+                Dịch vụ<br>
+                Sản phẩm<br>
+                Nhà cung cấp<br>
+                Tin tức<br>
+                Liên Hệ<br>
+            </div>
+            <div class="col-span-1 justify-between">
+                <p class="font-bold text-xl">Liên kết<br></p>
+                Giới thiệu<br>
+                Dịch vụ<br>
+                Sản phẩm<br>
+                Nhà cung cấp<br>
+                Tin tức<br>
+                Liên Hệ<br>
+            </div>
+            <div class="col-span-2">
+                <p class="font-bold text-xl ">Đăng ký nhận thông tin<br></p>
+                <p class="py-2">Nhận thông tin mới nhất về sản phẩm, khuyến mãi và tin tức từ LabanMall<br></p>
+                <div class="grid grid-cols-13 space-x-5 py-2">
+                    <button class="col-span-12 rounded-2xl bg-white text-gray-400 px-3 py-1 text-left w-*">Email của
+                        bạn</button>
+                    <div class="inline-block rounded-full bg-orange-400 p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="white">
+                            <path
+                                d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z" />
+                        </svg>
+                    </div>
+                </div>
+                <p class="font-bold text-xl py-4">Liên Hệ</p>
+                <div class="flex space-x-2 p-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="orange">
+                        <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 
+                        294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150
+                         96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                    </svg>
+                    <p>Tòa nhà LabanMall, Số 123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh</p>
+                </div>
+                <div class="flex space-x-2 p-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="orange">
+                        <path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 
+                        37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5
+                         41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+                    </svg>
+                    <p>1900 1234 56</p>
+                </div>
+                <div class="flex space-x-2 p-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="orange">
+                        <path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 
+                        37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5
+                         41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+                    </svg>
+                    <p>1900 1234 56</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-full h-[1px] bg-gradient-to-r from-transparent via-white to-transparent"></div>
+
+        <div class="flex bg-[#1B2530] justify-between items-center w-full text-white p-10 ">
+            <p>© 2025 LabanMall. Tất cả các quyền được bảo lưu.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:underline">Chính sách bảo mật</a>
+                <a href="#" class="hover:underline">Điều khoản sử dụng</a>
+                <a href="#" class="hover:underline">Sơ đồ trang</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
